@@ -1,7 +1,7 @@
 function createMenubar() {
   const link = document.createElement('link')
   link.rel = 'stylesheet'
-  link.href = `${window.location.origin}/global/components/menubar.css`
+  link.href = `${window.location.origin}/global/components/menubar/menubar.css`
   document.head.appendChild(link)
 
   const nav = document.querySelector('nav')
