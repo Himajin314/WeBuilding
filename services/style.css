@@ -1,0 +1,253 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    background-color: #fcfcfc;
+}
+
+/* Hero Section */
+.service-hero {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.service-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Service Details Section */
+.service-details-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    gap: 60px;
+}
+
+/* Alternating Layout: Even rows reversed */
+.service-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service-text {
+    flex: 1;
+}
+
+.service-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-left: 5px solid #1a1a1a;
+    padding-left: 15px;
+}
+
+.service-text p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.service-text ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.service-text li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.service-text li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* Visual Upgrade: Illustrations */
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Removed background-color and fixed height for flexibility */
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    /* Prevent images from becoming too huge */
+    object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+/* Pricing Section */
+.pricing-section {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+}
+
+.pricing-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 20px 30px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-table th {
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-price {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column-reverse;
+        /* Image on top */
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+
+    .service-text h2 {
+        border-left: none;
+        border-bottom: 2px solid #1a1a1a;
+        display: inline-block;
+        padding-left: 0;
+        padding-bottom: 5px;
+    }
+
+    .service-text ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .service-image img {
+        max-height: 250px;
+        /* Smaller images on mobile */
+    }
+
+    .service-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-table th {
+        text-align: center;
+    }
+}
+
+/* Scroll Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
