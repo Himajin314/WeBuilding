@@ -1,0 +1,24 @@
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.reserved {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid white;
+  }
+}
