@@ -1,0 +1,120 @@
+body{
+    margin-top: 60px;
+}
+
+.header{
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 12px;
+}
+
+.title1{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 80px;
+    padding: 0.8rem 0;
+    margin-bottom: 0.2rem;
+    background-image: linear-gradient(90deg, #b2d5de 0 20%, #dedede 20%);
+    background-repeat: no-repeat;
+    background-size: 100% 10%;
+    background-position: bottom;
+    color: #323232;
+    margin-bottom: 30px;
+}
+
+.guidance{
+    margin-left: 150px;
+    font-size: 18px;
+    margin-right: 150px;
+}
+
+.title{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+
+.table {
+    width: 480px; 
+    max-width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+
+.table th {
+
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 10px; 
+    text-align: left; 
+    vertical-align: top;  
+}
+
+.table-title {
+    font-weight: bold; 
+    background-color: #f9f9f9; 
+    width: 30%; 
+}
+
+
+.table-name {
+   font-weight: normal;    
+    width: 70%; 
+}
+
+
+.table tr:last-child th {
+    border-bottom: none;
+}
+
+/* .table{
+    margin-left: 150px;
+}
+
+.tbody{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    row-gap: 100px;
+}
+
+.table-row{
+    margin-top: 24px;
+
+}
+
+.table-title{
+    border-bottom: 2px solid #a3a2a2;
+}
+
+.table-name{
+    border-bottom: 1px solid #adacac;
+}
+ */
+
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 120px;
+}
+
+.menubar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
