@@ -5,44 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Overview</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+  <nav class="menubar"></nav>
+
     <div class="header">
-      <div>HOME</div>
-      <div>></div>
-      <div> 株式会社 we building 概要ページ </div>
+      <a href="">HOME</a>
+      <div></div>
+      <div>会社概要ページ</div>
     </div>
-    <h2 class="guidance">
-        茨城県に拠点を置く、HP制作会社です。
+    <h2 class="title1">
+        We building 会社案内
     </h2>
+    <div class="guidance">
+       水戸市を拠点とするWEB制作会社We buildingは、茨城県内の法人・店舗・団体様・個人事業主様向けにホームページの企画・制作・運用サポートを一貫して提供しております。
+       2025年の創業以来、<strong>中小企業様の販路拡大・集客強化をWEBで支援</strong>してきた豊富な実績と地域密着型のきめ細やかな対応力が強みです。
+       初めてホームページを作る方も、既存サイトのリニューアルをご検討の方も、どうぞ安心してご相談ください。
+    </div>
     <h2 class="title">
         - 会社概要
     </h2>
-    <table border="1" width="480px" class="table">
-        <tr>
-            <th width="30%">住所</th>
-            <th width="70%">茨城県水戸市城南</th>
+    <table  width="480px" class="table">
+        <tbody>
+        <tr class="table-row">
+            <th class="table-title" width="30%">住所</th>
+            <th class="table-name" width="70%">茨城県水戸市城南</th>
         </tr>
-        <tr>
-            <th>会社名</th>
-            <th>株式会社 We building </th>
+        <tr class="table-row">
+            <th class="table-title" width="30%">会社名</th>
+            <th class="table-name" width="70%">We Building</th>
         </tr>
-        <tr>
-            <th>創業</th>
-            <th>2025</th>
+        <tr class="table-row">
+           <th class="table-title" width="30%">創業</th>
+            <th class="table-name" width="70%">2025</th>
         </tr>
-        <tr>
-            <th>資本金(百万円)</th>
-            <th>0</th>
+        <tr class="table-row">
+            <th class="table-title" width="30%">TEL</th>
+            <th class="table-name" width="70%">080-0000-1234</th>
         </tr>
-        <tr>
-            <th>TEL</th>
-            <th>080-000-1234</th>
+        <tr class="table-row">
+            <th class="table-title" width="30%">業務内容</th>
+            <th class="table-name" width="70%">ホームページ制作</th>
         </tr>
-        <tr>
-            <th>業務内容</th>
-            <th>ホームページ制作 <br>アプリケーション開発 <br>サイト運営</th>
-        </tr>
+        </tbody>
     </table>
 
     <h2 class="title">
@@ -57,5 +64,8 @@
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+    <footer></footer>
 </body>
 </html>
+<script src="../global/components/menubar/menubar.js"></script>
+<script src="../global/components/footer/footer.js"></script>
